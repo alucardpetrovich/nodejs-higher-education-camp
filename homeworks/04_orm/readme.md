@@ -40,7 +40,7 @@
 
 [TypeORM npm package](https://www.npmjs.com/package/typeorm)
 
-[Connection options](https://typeorm.io/#/connection-options)
+[Connection options](https://typeorm.biunav.com/en/connection-options.html)
 
 [TypeORM entities](https://typeorm.io/#/entities)
 
