@@ -2,7 +2,6 @@
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
   // For more information, visit: 
-https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
@@ -20,6 +19,15 @@ https://go.microsoft.com/fwlink/?linkid=830387
       ],
       "args": ["create-user", "-l=test2", "-e=test@email.com", 
 "-p=qwerty"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Server with DB",
+      "program": "${workspaceFolder}/q_and_a/4_qa_levkiv/src/start.ts",
+      "preLaunchTask": "npm: build",
+      "outFiles": ["${workspaceFolder}/q_and_a/4_qa_levkiv/dist/**/*.js"],
+      "cwd": "${workspaceFolder}/q_and_a/4_qa_levkiv"
     }
   ]
 }
