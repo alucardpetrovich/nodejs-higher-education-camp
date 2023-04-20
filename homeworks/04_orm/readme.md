@@ -16,6 +16,7 @@
   dateCreation: Date required
   title: string required
   text: string required
+  userId: uuid or number
   ```
 4. Create Data Access Layer with Repository/DAO pattern (see materials from presentation)
 5. Don't expose TypeORM entities out of repositories. Use Domain models and TypeORM entities separately. Come up with some mapping.
