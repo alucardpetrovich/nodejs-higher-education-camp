@@ -8,7 +8,7 @@
    - should contain only one endpoint (POST body -> { userId: 'someId' })
    - this endpoint should update user with this id by setting `approved` as true 
    - as response return `204 No Content`
-   - create docker file foe this service and add it ti docker-compose.yml
+   - create docker file for this service and add it to docker-compose.yml
  
 - At main api when endpoint for user creation is called make request in new service after user created
 
