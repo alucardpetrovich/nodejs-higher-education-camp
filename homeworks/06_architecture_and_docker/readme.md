@@ -2,8 +2,6 @@
 
 - Create Dockerfile for api and docker-compose.yml for start project (should include api and db)
 
-- Add new functionality to your API from previous homework.
-
 - Add new field for User entity `approved` boolean default false
 
 - Create separate service trying use Layered architecture patterns.
