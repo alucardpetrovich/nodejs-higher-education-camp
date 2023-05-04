@@ -6,7 +6,12 @@
   "scripts": {
     "build": "tsc && tsc-alias",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "ts-node -r tsconfig-paths/register src/start.ts"
+    "start:dev": "ts-node -r tsconfig-paths/register src/start.ts",
+    "typeorm": "npm run build && node_modules/.bin/ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js -d ./dist/config/migrations.config.js",
+    "migrations:up": "npm run typeorm migration:run",
+    "migrations:create": "npm run typeorm -- migration:create -n",
+    "migrations:generate": "npm run typeorm -- migration:generate",
+    "migrations:down": "npm run typeorm migration:revert"
   },
   "keywords": [],
   "author": "",

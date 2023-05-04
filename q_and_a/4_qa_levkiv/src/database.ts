@@ -1,17 +1,15 @@
-import { DataSource } from "typeorm";
+import { DataSource, DataSourceOptions } from "typeorm";
 
 let connection: DataSource;
 
-export async function createConnection(url: string): Promise<DataSource> {
+export async function createConnection(
+  config: DataSourceOptions
+): Promise<DataSource> {
   if (connection) {
     return connection;
   }
 
-  connection = new DataSource({
-    url,
-    type: "postgres",
-    entities: ["**/*.entity.ts"],
-  });
+  connection = new DataSource(config);
   await connection.initialize();
 
   return connection;

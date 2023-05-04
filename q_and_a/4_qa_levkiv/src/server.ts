@@ -26,7 +26,7 @@ export class Server {
 
   async initDatabase() {
     try {
-      await createConnection(this.config.dbUrl);
+      await createConnection(this.config.db);
 
       console.log("Successfully connected to database");
     } catch (err) {
