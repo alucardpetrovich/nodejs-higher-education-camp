@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  main_db:
+    image: postgres:14.5-alpine
+    container_name: sandbox-pg
+    restart: on-failure
+    init: true
+    ports:
+      - "5398:5432"
+    volumes:
+      - ./scripts/pg_init:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: development_website
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_MULTIPLE_DATABASES: sandbox,sandbox_test
+      POSTGRES_HOST_AUTH_METHOD: password

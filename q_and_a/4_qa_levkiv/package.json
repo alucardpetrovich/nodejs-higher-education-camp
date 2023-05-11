@@ -11,7 +11,9 @@
     "migrations:up": "npm run typeorm migration:run",
     "migrations:create": "npm run typeorm -- migration:create -n",
     "migrations:generate": "npm run typeorm -- migration:generate",
-    "migrations:down": "npm run typeorm migration:revert"
+    "migrations:down": "npm run typeorm migration:revert",
+    "dc:up": "docker-compose -p 4_qa up -d",
+    "dc:down": "docker-compose -p 4_qa down"
   },
   "keywords": [],
   "author": "",
