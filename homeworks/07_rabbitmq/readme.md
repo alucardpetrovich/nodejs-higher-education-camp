@@ -1,4 +1,4 @@
-# :house: Homework 6
+# :house: Homework 7
 
 - Add RabbitMQ in docker-compose file
 
