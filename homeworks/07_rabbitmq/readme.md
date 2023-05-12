@@ -2,7 +2,7 @@
 
 - Add RabbitMQ in docker-compose file
 
-- Connect bouth service to RabbitMq
+- Connect both service to RabbitMq
 
 - Change communication between them from HTTP to RabbitMq. Make it with acknowledge to be sure that message was delivered
 
